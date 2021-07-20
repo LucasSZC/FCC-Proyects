@@ -1,0 +1,95 @@
+<html>
+<LINK REL=StyleSheet HREF="styles.css" TYPE="text/css" MEDIA=screen>
+<div class="container">
+<header>
+    <h1 id="title">Formulario consultivo sobre Historia</h1>
+    <p id="description">Gracias por tomarte el tiempo de responder, tu opinion es muy importante.</p>
+</header>
+<form id="survey-form">
+    <div class="form-group">
+        <label id="name-label" for="name">Nombre</label>
+        <input type="text" name="name" id="name" class="form-control" placeholder="Ingresa tu nombre" required>
+    </div>
+    <div class="form-group">
+        <label id="email-label" for="email">E-mail</label>
+        <input type="email" name="email" id="email" class="form-control" placeholder="Ingresa tu E-mail" required>
+    </div>
+    <div class="form-group">
+        <label id="age-label" for="age">Edad <span id="clue">(opcional)</span></label>
+        <input type="number" name="age" id="age" min="8" max="100" class="form-control" placeholder="Ingresa tu edad" required>
+    </div>
+    <div class="form-group">
+        <p>¿Cuál de las siguientes opciones describe mejor tu rol acual?</p>
+        <select id="dropdown" name="rol" class="form-control" required>
+        <option disabled selected value>Selecciona tu rol actual</option>
+        <option value="estudiante">Estudiante</option>
+        <option value="mt-estudiante">Estudiante a medio tiempo</option>
+        <option value="ft-job">Trabajo Full Time</option>
+        <option value="pfNo">Prefiero no contestar</option>
+        <option value="otro">Otro</option>
+    </select>
+    </div>
+    <div class="form-group">
+        <p>¿Disfrutas del contenido histórico?</p>
+        <label>
+            <input name="user-historia" value="Definitivamente" type="radio" class="input-radio" checked>
+        Definitivamente</label>
+        <label>
+            <input name="user-historia" value="Algo" type="radio" class="input-radio" checked>
+        Algo</label>
+        <label>
+            <input name="user-historia" value="Para nada" type="radio" class="input-radio" checked>
+        Para nada</label>
+    </div>
+    <div class="form-group">
+        <p>¿Cuál es tu período histórico favorito?</p>
+        <select id="per-historia" name="perhistoria" class="form-control" required>
+        <option disabled selected value>Selecciona un período histórico</option>
+        <option value="e-proto">Protohistoria</option>
+        <option value="e-antigua">Edad Antigua</option>
+        <option value="e-media">Edad Media</option>
+        <option value="e-moderna">Edad Moderna</option>
+        <option value="e-contemporanea">Edad Contemporánea</option>
+    </select>
+    </div>
+    <div class="form-group">
+        <p>¿Qué elementos te parecen importantes durante una clase de historia?<span id="clue">(Selecciona todos los que apliquen)</span></p>
+        <label>
+            <input name="elements" value="ele-dia" type="checkbox" class="input-checkbox">
+        Diapositivas</label>
+        <label>
+            <input name="elements" value="ele-map" type="checkbox" class="input-checkbox">
+        Mapas</label>
+        <label>
+            <input name="elements" value="ele-vid" type="checkbox" class="input-checkbox">
+        Videos</label>
+        <label>
+            <input name="elements" value="ele-orales" type="checkbox" class="input-checkbox">
+        Lecciones Orales</label>
+        <label>
+            <input name="elements" value="ele-tests" type="checkbox" class="input-checkbox">
+        Evaluaciones escritas</label>
+        <label>
+            <input name="elements" value="ele-img" type="checkbox" class="input-checkbox">
+        Imágenes</label>
+        <label>
+            <input name="elements" value="ele-clases" type="checkbox" class="input-checkbox">
+        Disponer de las clases grabadas</label>
+        <label>
+            <input name="elements" value="ele-tps" type="checkbox" class="input-checkbox">
+        Trabajos prácticos</label>
+    </div>
+    <div class="form-group">
+        <p>¿Algún comentario extra?</p>
+        <textarea id="comments" class="input-textarea" name="comments" placeholder="Ingresa tus comentarios aquí..."></textarea>
+        <button type="submit" id="submit" class="submit-button">Enviar</button>
+    </div>
+</form>
+<footer>
+    <p id="footer">
+    &copy; Creado para
+    <a id="f-code" href="https://www.freecodecamp.com/" target="_blank">freeCodeCamp</a>.
+    </p>
+</footer>
+</div>
+</html>
